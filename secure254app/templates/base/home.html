@@ -1,0 +1,27 @@
+{%extends "base.html"%}{%load static%} {%block content %}
+<h1 class="home-h">Secure254 - For a Safer Community</h1>
+
+<div class="home-page">
+  <div class="left">
+    <p class="home-p">
+      Secure254 is a community platform that allow individuals to report and see
+      all reported incidences in their community and around the country to help
+      improve overall community and individual safety.
+    </p>
+    <a href="{%url 'map'%}" class="btn btn-success" id="home-btn"
+      >Incidence Map</a
+    >
+    <a href="{%url 'report'%}" class="btn btn-info text-white" id="home-btn"
+      >Report Incident</a
+    >
+  </div>
+  <div class="right">
+    <img
+      src="{% static 'images/community.jpg'%}"
+      alt="community image"
+      class="community-img"
+    />
+  </div>
+</div>
+
+{% endblock %}

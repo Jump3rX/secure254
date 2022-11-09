@@ -1,0 +1,13 @@
+{%extends "base.html"%} {%block content %}
+<div class="row">
+  <h1>Reported Incidents</h1>
+
+  {{map1|safe}}
+  <h3>Map Key</h3>
+  <ol>
+    <li>Red Icon - Incident not verified by police.</li>
+    <li>Green Icon - Incident verified by police.</li>
+  </ol>
+</div>
+
+{%endblock%}
